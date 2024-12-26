@@ -1,11 +1,13 @@
 ﻿#include "../exercise.h"
+#include <cstring>
 #include <memory>
 #include <string>
 #include <vector>
 
 // READ: `std::unique_ptr` <https://zh.cppreference.com/w/cpp/memory/unique_ptr>
 
-std::vector<std::string> RECORDS;
+std::vector<std::string>
+    RECORDS;
 
 class Resource {
     std::string _records;
@@ -57,8 +59,8 @@ int main(int argc, char **argv) {
     std::vector<const char *> answers[]{
         {"fd"},
         // TODO: 分析 problems[1] 中资源的生命周期，将记录填入 `std::vector`
-        {"", "", "", "", "", "", "", ""},
-        {"", "", "", "", "", "", "", ""},
+        {"d", "ffr"},
+        {"d", "d", "r"},
     };
 
     // ---- 不要修改以下代码 ----
